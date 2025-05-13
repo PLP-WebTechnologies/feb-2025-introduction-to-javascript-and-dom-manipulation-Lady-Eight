@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Farming App</title>
+    <script src="script.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .container { margin: 20px auto; max-width: 600px; }
+        button { padding: 10px 20px; margin: 10px; cursor: pointer; }
+        #styleBox { width: 100px; height: 100px; margin: 20px auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GrowEasy: Farmer Dashboard</h1>
+    </header>
+    <main>
+        <section class="container">
+            <p id="dynamicText">Monitor your farm's status here.</p>
+            <button onclick="changeText()">Update Status</button>
+            <div id="styleBox"></div>
+            <button onclick="changeStyle()">Change Color</button>
+            <button id="toggleButton" onclick="toggleElement()">Add Note</button>
+            <div id="noteContainer"></div>
+        </section>
+    </main>
+</body>
+</html>
